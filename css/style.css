@@ -25,7 +25,7 @@ nav ul .nav-item, .nav-link{
     margin-left: 10px;
     color: #000;
 }
-nav ul .nav-item .active{
+ul .nav-item .active{
     color: blue;
     border-bottom: 3px solid blue;
 }
@@ -114,7 +114,7 @@ nav ul .nav-item .active{
 .touch:hover{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-}
+
 .row .col6 .images{
     width: 500px;
     height: 500px;
@@ -141,8 +141,55 @@ nav ul .nav-item .active{
 .strong2{
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 47%, 0 0);
 }
+/* map */
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* form */
+.form-container{
+    width: 50%;
+    height: 60vh;
+    background: rgb(97, 97, 97);
+    margin: 3rem auto;
+    border-radius: 7px;
+    color: #fff;
 
-
+}
+.form-control{
+    display: flex;justify-content: center;align-items: center;
+}
+.form-group{
+    width: 100%;
+    padding: 10px; 
+}
+.group{
+    margin: 10px;
+    width: 100%;
+}
+.big{
+    height: 15vh;
+}
+/* footer */
+footer{
+    width: 100%;
+    background: #eee;
+    display: flex;justify-content: center;align-items: center;
+}
+footer div h3{
+    text-align: center;
+}
+footer div ul{
+    display: flex;justify-content: center;align-items: center;
+}
+.icon{
+    font-size: 2rem;
+    color: blue;
+}
+footer a{
+    margin: 10px;
+}
 @media (max-width:768px){
     nav{
         width: 100%;
@@ -171,6 +218,13 @@ nav ul .nav-item .active{
    }
    .reverse{
     flex-wrap: wrap-reverse;
+    }
+    /* form */
+    .form-container{
+        width: 90%;
+    }
+    .big{
+        height: 30vh;
     }
 }
 @media(max-width:428px){
@@ -218,5 +272,22 @@ nav ul .nav-item .active{
     }
     .reverse{
         flex-wrap: wrap-reverse;
+    }
+    /* form */
+    .form-container{
+        width: 100%;
+    }
+    .form-container .big{
+        height: 10vh;
+    }
+    /* footer */
+    footer div ul{
+        display: block;
+    }
+    footer div .flx{
+        display: flex;
+    }
+    footer a span{
+        display: none;
     }
 }
